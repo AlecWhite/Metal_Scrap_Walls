@@ -1,0 +1,12 @@
+[{
+    "type": "construction_group",
+    "id": "build_metal_scrap_2_welded_wall",
+    "name": "Build a welded metal scrap wall"
+  },
+  {
+    "type": "construction_group",
+    "id": "build_metal_scrap_2_nailed_wall",
+    "name": "Build a nailed metal scrap wall"
+  }
+
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "scrap_walls",
+    "name": "<color_light_gray>Scrap Walls</color>",
+    "authors": [ "Alec White" ],
+    "description": "Adds metal crap walls",
+    "category": "content",
+    "obsolete": false,
+    "dependencies": [ "bn" ]
+  }
+]

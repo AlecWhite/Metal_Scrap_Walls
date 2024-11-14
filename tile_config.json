@@ -1,0 +1,81 @@
+
+[
+    {
+      "type": "mod_tileset",
+      "compatibility": [ "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE", "MshockRealXotto", "MSX++DEAD_PEOPLE" ],
+      "tiles-new": [
+        {
+          "file": "tiles.png",
+          "tiles": [
+            {
+                "id": "t_metal_scrap_wall_2_welded",
+                "fg": 0,
+                "rotates": true,
+                "multitile": true,
+                "additional_tiles": [
+                  { "id": "center", "fg": 1},
+                  { "id": "corner", "fg": [ 2, 3, 4, 5 ] },
+                  { "id": "t_connection", "fg": [ 12, 13, 14, 15 ] },
+                  { "id": "edge", "fg": [ 8, 9 ] },
+                  { "id": "end_piece", "fg": [ 10, 11, 6, 7 ]},
+                  { "id": "unconnected", "fg": 16}
+                ]
+              },
+              {
+                "id": "t_metal_scrap_wall_2_welded_halfway",
+                "fg": 0,
+                "rotates": true,
+                "multitile": true,
+                "additional_tiles": [
+                  { "id": "center", "fg": 1},
+                  { "id": "corner", "fg": [ 2, 3, 4, 5 ] },
+                  { "id": "t_connection", "fg": [ 12, 13, 14, 15 ] },
+                  { "id": "edge", "fg": [ 8, 9 ] },
+                  { "id": "end_piece", "fg": [ 10, 11, 6, 7 ]},
+                  { "id": "unconnected", "fg": 16}
+                ]
+              },
+              {
+                "id": "t_metal_scrap_wall_2_nailed",
+                "fg": 0,
+                "rotates": true,
+                "multitile": true,
+                "additional_tiles": [
+                  { "id": "center", "fg": 1},
+                  { "id": "corner", "fg": [ 2, 3, 4, 5 ] },
+                  { "id": "t_connection", "fg": [ 12, 13, 14, 15 ] },
+                  { "id": "edge", "fg": [ 8, 9 ] },
+                  { "id": "end_piece", "fg": [ 10, 11, 6, 7 ]},
+                  { "id": "unconnected", "fg": 16}
+                ]
+              },
+              {
+                "id": "t_metal_scrap_wall_2_nailed_halfway",
+                "fg": 0,
+                "rotates": true,
+                "multitile": true,
+                "additional_tiles": [
+                  { "id": "center", "fg": 1},
+                  { "id": "corner", "fg": [ 2, 3, 4, 5 ] },
+                  { "id": "t_connection", "fg": [ 12, 13, 14, 15 ] },
+                  { "id": "edge", "fg": [ 8, 9 ] },
+                  { "id": "end_piece", "fg": [ 10, 11, 6, 7 ]},
+                  { "id": "unconnected", "fg": 16}
+                ]
+              }
+
+
+
+
+
+
+
+          ],
+          "sprite_width": 32,
+          "sprite_height": 32,
+          "sprite_offset_x": 0,
+          "sprite_offset_y": 0
+        }
+      ]
+    }
+  ]

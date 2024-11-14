@@ -1,0 +1,58 @@
+[
+  {
+    "type": "construction",
+    "id": "constr_scrap_wall_2_welded_halfway",
+    "group": "build_metal_scrap_2_welded_wall",
+    "//": "Step 1: foundation",
+    "category": "CONSTRUCT",
+    "required_skills": [ [ "fabrication", 1 ] ],
+    "time": "90 m",
+    "qualities": [ { "id": "GLARE", "level": 2 }, { "id": "HAMMER", "level": 1 }  ],
+    "tools": [ [ [ "oxy_torch", 30 ], [ "welder", 120 ], [ "toolset", 150 ] ] ],
+    "components": [ [ [ "scrap", 100 ] ] ],
+    "pre_terrain": "t_pit_shallow",
+    "post_terrain": "t_metal_scrap_wall_2_welded_halfway"
+  },
+  {
+    "type": "construction",
+    "id": "constr_scrap_wall_2_welded_wall",
+    "group": "build_metal_scrap_2_welded_wall",
+    "//": "Step 2: finish wall",
+    "category": "CONSTRUCT",
+    "required_skills": [ [ "fabrication", 1 ] ],
+    "time": "90 m",
+    "qualities": [ { "id": "GLARE", "level": 2 }, { "id": "HAMMER", "level": 1 }  ],
+    "tools": [ [ [ "oxy_torch", 30 ], [ "welder", 120 ], [ "toolset", 150 ] ] ],
+    "components": [ [ [ "scrap", 100 ] ] ],
+    "pre_terrain": "t_metal_scrap_wall_2_welded_halfway",
+    "post_terrain": "t_metal_scrap_wall_2_welded"
+  },  
+  {
+    "type": "construction",
+    "id": "constr_scrap_wall_2_nailed_halfway",
+    "group": "build_metal_scrap_2_nailed_wall",
+    "//": "Step 1: foundation",
+    "category": "CONSTRUCT",
+    "required_skills": [ [ "fabrication", 1 ] ],
+    "time": "90 m",
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "components": [ [ [ "scrap", 80 ] ], [ [ "nail", 20 ] ] ],
+    "pre_terrain": "t_pit_shallow",
+    "post_terrain": "t_metal_scrap_wall_2_nailed_halfway"
+  },
+  {
+    "type": "construction",
+    "id": "constr_scrap_wall_2_nailed_wall",
+    "group": "build_metal_scrap_2_nailed_wall",
+    "//": "Step 2: finish wall",
+    "category": "CONSTRUCT",
+    "required_skills": [ [ "fabrication", 1 ] ],
+    "time": "90 m",
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "components": [ [ [ "scrap", 80 ] ], [ [ "nail", 20 ] ] ],
+    "pre_terrain": "t_metal_scrap_wall_2_nailed_halfway",
+    "post_terrain": "t_metal_scrap_wall_2_nailed"
+  }
+
+
+]

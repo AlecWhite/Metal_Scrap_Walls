@@ -1,0 +1,108 @@
+[
+    {
+        "type": "terrain",
+        "id": "t_metal_scrap_wall_2_welded",
+        "alias": [ "t_metal_scrap_wall_2_welded_h", "t_metal_scrap_wall_2_welded_v" ],
+        "name": "welded metal scrap wall",
+        "description": "A shoddy built metal scrap wall, welded in place.",
+        "symbol": "LINE_OXOX",
+        "color": "light_gray",
+        "move_cost": 0,
+        "coverage": 100,
+        "roof": "t_flat_roof",
+        "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+        "oxytorch": {
+          "result": "t_metal_scrap_wall_2_welded_halfway",
+          "duration": "20 seconds",
+          "byproducts": [  { "item": "scrap", "count": [ 40, 100 ] } ]
+        },
+        "bash": {
+          "str_min": 10,
+          "str_max": 100,
+          "sound": "metal screeching!",
+          "sound_fail": "clang!",
+          "ter_set": "t_null",
+          "items": [
+            { "item": "scrap", "count": [ 30, 80 ] }
+          ],
+          "ranged": { "reduction": [ 3, 6 ], "destroy_threshold": 65 }
+        }
+      }
+      ,    
+      {
+        "type": "terrain",
+        "id": "t_metal_scrap_wall_2_nailed",
+        "alias": [ "t_metal_scrap_wall_2_nailed_h", "t_metal_scrap_wall_2_nailed_v" ],
+        "name": "nailed metal scrap wall",
+        "description": "A shoddy built metal scrap wall, nailed in place.",
+        "symbol": "LINE_OXOX",
+        "color": "light_gray",
+        "move_cost": 0,
+        "coverage": 100,
+        "roof": "t_flat_roof",
+        "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+        "oxytorch": {
+          "result": "t_metal_scrap_wall_2_nailed_halfway",
+          "duration": "30 seconds",
+          "byproducts": [  { "item": "scrap", "count": [ 40, 100 ] },{ "item": "nail", "count": [ 10, 40 ] } ]
+        },
+        "bash": {
+          "str_min": 10,
+          "str_max": 100,
+          "sound": "metal screeching!",
+          "sound_fail": "clang!",
+          "ter_set": "t_null",
+          "items": [
+            { "item": "scrap", "count": [ 30, 80 ] },
+            { "item": "nail", "count": [ 1, 20 ] }
+          ],
+          "ranged": { "reduction": [ 3, 6 ], "destroy_threshold": 65 }
+        }
+      },  
+      {
+        "type": "terrain",
+        "id": "t_metal_scrap_wall_2_welded_halfway",
+        "name": "half-built simple welded metal scrap wall",
+        "description": "A partially built makeshift welded wall of metal scrap that could potentially support a roof if it were completed.",
+        "symbol": "#",
+        "color": "dark_gray",
+        "move_cost": 4,
+        "coverage": 60,
+        "flags": [ "NOITEM", "TRANSPARENT", "MOUNTABLE", "REDUCE_SCENT", "MINEABLE" ],
+        "bash": {
+          "str_min": 50,
+          "str_max": 130,
+          "sound": "metal screeching!",
+          "sound_fail": "clang!",
+          "ter_set": "t_pit_shallow",
+          "items": [ { "item": "scrap", "count": [ 15, 40 ] } ],
+          "//": "reduction and destroy_threshold equal to completed version",
+          "ranged": { "reduction": [ 2, 3 ], "destroy_threshold": 32, "block_unaimed_chance": "50%" }
+        }
+      },
+      {
+        "type": "terrain",
+        "id": "t_metal_scrap_wall_2_nailed_halfway",
+        "name": "half-built simple nailed metal scrap wall",
+        "description": "A partially built makeshift nailed wall of metal scrap that could potentially support a roof if it were completed.",
+        "symbol": "#",
+        "color": "dark_gray",
+        "move_cost": 4,
+        "coverage": 60,
+        "flags": [ "NOITEM", "TRANSPARENT", "MOUNTABLE", "REDUCE_SCENT", "MINEABLE" ],
+        "bash": {
+          "str_min": 50,
+          "str_max": 130,
+          "sound": "metal screeching!",
+          "sound_fail": "clang!",
+          "ter_set": "t_pit_shallow",
+          "items": [ { "item": "steel_chunk", "count": [ 5, 11 ] }, { "item": "nail", "count": [ 1, 20 ] } ],
+          "//": "reduction and destroy_threshold equal to completed version",
+          "ranged": { "reduction": [ 2, 3 ], "destroy_threshold": 32, "block_unaimed_chance": "50%" }
+        }
+      }
+      
+      
+
+
+]
