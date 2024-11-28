@@ -4,7 +4,7 @@
     "id": "scrap_walls",
     "name": "<color_light_gray>Scrap Walls</color>",
     "authors": [ "Alec White" ],
-    "description": "Adds metal crap walls",
+    "description": "Adds metal scrap walls",
     "category": "content",
     "obsolete": false,
     "dependencies": [ "bn" ]
